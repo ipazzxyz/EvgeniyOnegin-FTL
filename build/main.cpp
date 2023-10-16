@@ -1,4 +1,4 @@
-#include "src/Poem.h"
+#include "../include/Poem.h"
 #include <iostream>
 
 int main() {

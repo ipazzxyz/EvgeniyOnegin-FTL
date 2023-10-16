@@ -1,4 +1,4 @@
-#include "RNG.h"
+#include "../include/RNG.h"
 #include <cstdlib>
 #include <ctime>
 #define SIZE 5310

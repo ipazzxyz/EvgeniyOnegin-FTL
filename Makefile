@@ -1,7 +1,7 @@
-all: main
+all: bin/main
 
-main: main.cpp src/Composition.cpp src/Line.cpp src/Poem.cpp src/RNG.cpp
-	g++ main.cpp src/Composition.cpp src/Line.cpp src/Poem.cpp src/RNG.cpp -o main
+bin/main: build/main.cpp src/Composition.cpp src/Line.cpp src/Poem.cpp src/RNG.cpp
+	g++ build/main.cpp src/Composition.cpp src/Line.cpp src/Poem.cpp src/RNG.cpp -o bin/main
 
 clean:
-	rm main
+	rm bin/main

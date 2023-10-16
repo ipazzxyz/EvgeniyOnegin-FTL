@@ -1,4 +1,4 @@
-#include "Poem.h"
+#include "../include/Poem.h"
 #include <ostream>
 #define SIZE 5310
 
