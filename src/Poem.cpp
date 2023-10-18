@@ -41,6 +41,8 @@ Poem::Poem(const Composition &composition, const RNG &rng) {
 
 Line *Poem::getLines() const { return this->lines_; }
 
+Poem::~Poem() { delete[] this->lines_; }
+
 inline int find_rhyme(const Composition &composition, const int &index) {
   for (int i = 1; i < SIZE; ++i) {
     if (is_rhyme(composition[index], composition[(i + index) % SIZE])) {

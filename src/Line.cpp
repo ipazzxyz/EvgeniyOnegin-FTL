@@ -1,6 +1,6 @@
 #include "../include/Line.h"
-#include <iostream>
-#define ACC 4
+#define ACCMIN 3
+#define ACCMAX 6
 
 void Line::setBegin(char *begin) { this->begin_ = begin; }
 void Line::setEnd(char *end) { this->end_ = end; }
@@ -26,7 +26,8 @@ bool is_rhyme(const Line &line1, const Line &line2) {
       break;
     }
   }
-  return cnt > ACC;
+  cnt /= 2;
+  return cnt >= ACCMIN && cnt <= ACCMAX;
 }
 inline std::string to_string(const Line &line) {
   std::string result;
@@ -37,7 +38,7 @@ inline std::string to_string(const Line &line) {
   }
   return result;
 }
-inline bool is_punct(const int &c) { return c >= ' ' && c <= '@'; }
+inline bool is_punct(const int &c) { return c >= 0; }
 
 std::ostream &operator<<(std::ostream &out, const Line &line) {
   out << to_string(line);

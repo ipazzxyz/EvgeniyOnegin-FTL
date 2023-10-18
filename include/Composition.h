@@ -5,6 +5,7 @@ class Composition {
 public:
   Composition();
   Line operator[](const int &index) const;
+  ~Composition();
 
 private:
   Line *lines_;

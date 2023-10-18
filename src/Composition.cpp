@@ -21,6 +21,9 @@ Composition::Composition() {
   }
   this->lines_[SIZE - 1].setEnd(begin + LEN - 1);
 }
+
+Composition::~Composition() { delete[] this->lines_; }
+
 Line Composition::operator[](const int &index) const {
   return this->lines_[index];
 }

@@ -8,7 +8,7 @@ public:
        const int &index4, const int &index5, const int &index10,
        const int &index11, const int &index12);
   Poem(const Composition &composition, const RNG &rng);
-
+  ~Poem();
   Line *getLines() const;
 
 private:
