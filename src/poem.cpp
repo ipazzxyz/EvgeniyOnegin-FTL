@@ -1,5 +1,7 @@
-#include "../include/Poem.h"
+#include "poem.hpp"
+
 #include <ostream>
+
 #define SIZE 5310
 
 Poem::Poem(const Composition &composition, const int &index0, const int &index2,

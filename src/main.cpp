@@ -1,5 +1,6 @@
-#include "../include/Poem.h"
 #include <iostream>
+
+#include "poem.hpp"
 
 int main() {
   Composition c;

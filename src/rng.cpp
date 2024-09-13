@@ -1,6 +1,8 @@
-#include "../include/RNG.h"
+#include "rng.hpp"
+
 #include <cstdlib>
 #include <ctime>
+
 #define SIZE 5310
 
 RNG::RNG() {

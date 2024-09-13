@@ -1,4 +1,5 @@
-#include "../include/Line.h"
+#include "line.hpp"
+
 #define ACCMIN 3
 #define ACCMAX 6
 
@@ -32,7 +33,7 @@ bool is_rhyme(const Line &line1, const Line &line2) {
 inline std::string to_string(const Line &line) {
   std::string result;
   char *ptr = line.getBegin();
-  while (ptr < line.getEnd()) {
+  while (ptr && ptr < line.getEnd()) {
     result.push_back(*ptr);
     ++ptr;
   }

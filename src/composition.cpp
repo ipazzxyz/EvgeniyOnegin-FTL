@@ -1,7 +1,9 @@
-#include "../include/Composition.h"
+#include "composition.hpp"
+
 #include <fstream>
 #include <ostream>
-#define FILENAME "../lib/data.txt"
+
+#define FILENAME "data.txt"
 #define LEN 250338
 #define SIZE 5310
 
